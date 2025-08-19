@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Your eXp Interview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="exp-logo.png" alt="eXp Logo" class="logo">
+      <h1>Your AI-Powered eXp Intro Interview</h1>
+      <p class="subtitle">
+        This short, AI-powered interview is a simple way for us to learn more about you, in your own words.<br><br>
+        We’ll transcribe and review your responses so our team can follow up personally.<br><br>
+        Just speak naturally — this isn’t about perfect answers, it’s about helping us get to know the real you.
+      </p>
+      <button id="start">Start Interview</button>
+      <p id="status">Click the button to begin.</p>
+      <p class="privacy">🔒 Your responses are private and reviewed only by our recruiting team.</p>
+
+      <!-- Live Q&A responses -->
+      <div id="answers"></div>
+
+      <!-- GPT-generated summary output -->
+      <div id="summary"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

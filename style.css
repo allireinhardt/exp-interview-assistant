@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 102, 255, 0.25); /* glow effect */
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 6px 14px rgba(30, 64, 175, 0.25);
+}
+
+button:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+#status {
+  margin-top: 24px;
+  font-size: 15px;
+  color: #333;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.privacy {
+  font-size: 13px;
+  color: #bbb;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#answers {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#answers div {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* GPT summary box — hidden until needed */
+#summary {
+  margin-top: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: none;
+}
+
+#summary.visible {
+  display: block;
+}
+
+#summary h3 {
+  margin-top: 0;
+  color: #1e40af;
+}
